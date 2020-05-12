@@ -18,6 +18,11 @@
         }
     }
 }
+.header-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .overview-header{
     color: $dark-grayish-blue;
