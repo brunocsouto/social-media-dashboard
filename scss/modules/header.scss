@@ -18,3 +18,12 @@
         }
     }
 }
+
+.overview-header{
+    color: $dark-grayish-blue;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    @include medium-and-above() {
+        margin-top: 10px;
+    }
+}

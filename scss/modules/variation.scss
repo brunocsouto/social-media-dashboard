@@ -1,0 +1,12 @@
+/* Variation Label Styles */
+.variation-label {
+    font-size: 0.875em;
+    display: inline-flex;
+    align-items: center;
+}
+.arrow-up {
+    @include arrowUp();
+}
+.arrow-down {
+    @include arrowDown();
+}

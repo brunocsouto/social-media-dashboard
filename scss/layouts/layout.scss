@@ -6,6 +6,13 @@
     margin-right: auto;
     @include medium-and-above() {
         max-width: 80em;
+        .overview-primary,
+        .overview-secondary {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 30px;
+            margin-bottom: 40px;
+        }
     }
 }
 
@@ -13,3 +20,4 @@
     display: flex;
     justify-content: space-between;
 }
+

@@ -375,7 +375,8 @@ textarea {
 body {
   font-family: 'Inter', sans-serif;
   color: #63687e;
-  font-size: 0.875em; }
+  font-size: 0.875em;
+  background-color: white; }
 
 h1,
 h2,
@@ -406,7 +407,13 @@ p {
   margin-right: auto; }
   @media only screen and (min-width: 62em) {
     .container {
-      max-width: 80em; } }
+      max-width: 80em; }
+      .container .overview-primary,
+      .container .overview-secondary {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+        margin-bottom: 40px; } }
 
 .row-spaced {
   display: flex;
@@ -415,12 +422,16 @@ p {
 /* Modules Imports */
 /* Box Styles */
 .box {
-  background-color: #f0f2fa;
+  background-color: #f5f7ff;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   padding: 25px;
   position: relative;
   overflow: hidden; }
+  @media only screen and (min-width: 62em) {
+    .box:hover {
+      background-color: #f0f2fa;
+      cursor: pointer; } }
 
 .box-primary {
   text-align: center; }
@@ -440,6 +451,34 @@ p {
     letter-spacing: 5px;
     font-size: 0.875em;
     padding-bottom: 30px; }
+  .box-primary .box-facebook {
+    height: 4px;
+    width: 100%;
+    background: deepskyblue;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px; }
+  .box-primary .box-twitter {
+    height: 4px;
+    width: 100%;
+    background: #1ca0f2;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px; }
+  .box-primary .box-instagram {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #fdc468, #df4996);
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px; }
+  .box-primary .box-youtube {
+    height: 4px;
+    width: 100%;
+    background: #c4032a;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px; }
 
 .box-secondary {
   height: 80px;
@@ -453,64 +492,9 @@ p {
     align-items: flex-end; }
   .box-secondary .secondary-counter {
     font-size: 2.000em; }
-
-.variation-label {
-  font-size: 0.875em;
-  display: inline-flex;
-  align-items: center; }
-
-.overview-header {
-  color: #63687e;
-  margin-top: 70px;
-  margin-bottom: 30px; }
-
-.box-facebook {
-  height: 4px;
-  width: 100%;
-  background: deepskyblue;
-  position: absolute;
-  margin-top: -25px;
-  margin-left: -25px; }
-
-.box-twitter {
-  height: 4px;
-  width: 100%;
-  background: #1ca0f2;
-  position: absolute;
-  margin-top: -25px;
-  margin-left: -25px; }
-
-.box-instagram {
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(to right, #fdc468, #df4996);
-  position: absolute;
-  margin-top: -25px;
-  margin-left: -25px; }
-
-.box-youtube {
-  height: 4px;
-  width: 100%;
-  background: #c4032a;
-  position: absolute;
-  margin-top: -25px;
-  margin-left: -25px; }
-
-.arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #1db489;
-  margin-right: 5px; }
-
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #dc414c;
-  margin-right: 5px; }
+  @media only screen and (min-width: 62em) {
+    .box-secondary {
+      margin-bottom: 0px; } }
 
 /* Header Styles */
 .header {
@@ -528,3 +512,33 @@ p {
       align-items: center; }
       .header .header-line {
         visibility: hidden; } }
+
+.overview-header {
+  color: #63687e;
+  margin-top: 70px;
+  margin-bottom: 30px; }
+  @media only screen and (min-width: 62em) {
+    .overview-header {
+      margin-top: 10px; } }
+
+/* Variation Label Styles */
+.variation-label {
+  font-size: 0.875em;
+  display: inline-flex;
+  align-items: center; }
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #1db489;
+  margin-right: 5px; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #dc414c;
+  margin-right: 5px; }
