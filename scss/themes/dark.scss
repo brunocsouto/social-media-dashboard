@@ -13,6 +13,9 @@
     h2 {
         color: $desaturated-blue;
     }
+    hr {
+        border-color: $desaturated-blue;
+    }
     .box {
         background-color: $dark-desaturated-blue;
         @include medium-and-above() {

@@ -434,7 +434,8 @@ p {
       cursor: pointer; } }
 
 .box-primary {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 30px; }
   .box-primary img {
     margin-right: 10px; }
   .box-primary .media {
@@ -520,7 +521,7 @@ p {
 
 .overview-header {
   color: #63687e;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 30px; }
   @media only screen and (min-width: 62em) {
     .overview-header {
@@ -608,6 +609,8 @@ input:checked + .slider:before {
   .dark-theme p.header-toggle-label,
   .dark-theme h2 {
     color: #8b97c6; }
+  .dark-theme hr {
+    border-color: #8b97c6; }
   .dark-theme .box {
     background-color: #252a41; }
     @media only screen and (min-width: 62em) {
