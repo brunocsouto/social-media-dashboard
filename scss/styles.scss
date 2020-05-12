@@ -2,3 +2,11 @@
 @import "base/normalize";
 @import "base/variables.scss";
 @import "base/base";
+@import "base/mixins";
+
+/* Layouts Imports */
+@import "layouts/layout";
+
+/* Modules Imports */
+@import "modules/box";
+@import "modules/header";

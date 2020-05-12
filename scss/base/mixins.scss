@@ -1,0 +1,29 @@
+/* Global Mixins */
+
+@mixin boxHeaderLine($color) {
+    height: 4px;
+    width: 100%;
+    background: $color;
+    position: absolute;
+    margin-top: -$spacing-primary;
+    margin-left: -$spacing-primary;
+}
+
+@mixin arrowUp() {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+    border-bottom: 5px solid $lime-green;
+    margin-right: 5px;
+}
+@mixin arrowDown() {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+    border-top: 5px solid $bright-red;
+    margin-right: 5px;
+}

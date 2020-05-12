@@ -2,5 +2,30 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
 body {
     font-family: 'Inter', sans-serif;
+    color: $dark-grayish-blue;
     font-size: 0.875em;
 }
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    color: $very-dark-blue;
+}
+
+p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.positive {
+    color: $lime-green;
+}
+.negative {
+    color: $bright-red;
+}
+
+/* Base Modules Variables */
+
+/* Base Box Variables */
+$spacing-primary: 25px;

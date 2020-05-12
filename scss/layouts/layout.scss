@@ -1,0 +1,12 @@
+/* Layout Styles */
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-spaced {
+    display: flex;
+    justify-content: space-between;
+}

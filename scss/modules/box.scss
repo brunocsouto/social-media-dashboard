@@ -1,0 +1,77 @@
+/* Box Styles */
+.box {
+    background-color: $light-grayish-blue;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    padding: $spacing-primary;
+    position: relative;
+    overflow: hidden;
+}
+.box-primary {
+    text-align: center;
+    & img {
+        margin-right: 10px;
+    }
+    .media {
+        display: inline-flex;
+    }
+    .media-tag {
+        align-self: center;
+        font-size: 0.875em;
+    }
+    .primary-counter {
+        font-size: 4.000em;
+        padding-top: 15px;
+    }
+    .primary-label {
+        text-transform: uppercase;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 0.875em;
+        padding-bottom: 30px;
+    }
+}
+.variation {
+    font-size: 0.875em;
+    display: inline-flex;
+    align-items: center;
+}
+.overview-header{
+    color: $dark-grayish-blue;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.box-secondary {
+    height: 80px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .row-top {
+        align-items: flex-start;
+    }
+    .row-bottom {
+        align-items: flex-end;
+    }
+    .secondary-counter {
+        font-size: 2.000em;
+    }
+}
+.box-facebook {
+    @include boxHeaderLine($facebook);
+}
+.box-twitter {
+    @include boxHeaderLine($twitter);
+}
+.box-instagram {
+    @include boxHeaderLine($instagram);
+}
+.box-youtube {
+    @include boxHeaderLine($youtube);
+}
+.arrow-up {
+    @include arrowUp();
+}
+.arrow-down {
+    @include arrowDown();
+}
