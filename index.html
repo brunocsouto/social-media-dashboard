@@ -13,6 +13,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script src="js/app.js"></script>
 </head>
 <body>
   <header class="container header">
@@ -30,7 +31,7 @@
         Dark Mode
       </p>
       <label class="switch">
-        <input type="checkbox" checked>
+        <input type="checkbox" checked onclick="toggleDarkTheme(this.checked)">
         <span class="slider"></span>
       </label>
     </div>

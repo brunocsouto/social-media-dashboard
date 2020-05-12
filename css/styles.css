@@ -593,3 +593,25 @@ input:checked + .slider:before {
   -webkit-transform: translateX(19px);
   -ms-transform: translateX(19px);
   transform: translateX(19px); }
+
+/* Themes Imports */
+/* Dark theme Styles */
+.dark-theme {
+  background-color: #1e202a;
+  color: white; }
+  .dark-theme h1,
+  .dark-theme h2.secondary-counter {
+    color: white; }
+  .dark-theme p.secondary-label,
+  .dark-theme p.media-tag,
+  .dark-theme p.header-subtitle,
+  .dark-theme p.header-toggle-label,
+  .dark-theme h2 {
+    color: #8b97c6; }
+  .dark-theme .box {
+    background-color: #252a41; }
+    @media only screen and (min-width: 62em) {
+      .dark-theme .box:hover {
+        background-color: #63687e; } }
+  .dark-theme .slider {
+    background-color: #1e202a; }

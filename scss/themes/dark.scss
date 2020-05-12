@@ -1,0 +1,27 @@
+/* Dark theme Styles */
+.dark-theme {
+    background-color: $very-dark-blue;
+    color: $white;
+    h1,
+    h2.secondary-counter {
+        color: $white;
+    }
+    p.secondary-label,
+    p.media-tag,
+    p.header-subtitle,
+    p.header-toggle-label,
+    h2 {
+        color: $desaturated-blue;
+    }
+    .box {
+        background-color: $dark-desaturated-blue;
+        @include medium-and-above() {
+            &:hover {
+                background-color: $dark-grayish-blue;
+            }
+        }
+    }
+    .slider {
+        background-color: $very-dark-blue;
+    }
+}
