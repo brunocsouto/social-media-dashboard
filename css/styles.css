@@ -396,6 +396,7 @@ p {
 /* Base Modules Variables */
 /* Base Box Variables */
 /* Global Mixins */
+/* Media Queries Definitions */
 /* Layouts Imports */
 /* Layout Styles */
 .container {
@@ -403,6 +404,9 @@ p {
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto; }
+  @media only screen and (min-width: 62em) {
+    .container {
+      max-width: 80em; } }
 
 .row-spaced {
   display: flex;
@@ -437,16 +441,6 @@ p {
     font-size: 0.875em;
     padding-bottom: 30px; }
 
-.variation {
-  font-size: 0.875em;
-  display: inline-flex;
-  align-items: center; }
-
-.overview-header {
-  color: #63687e;
-  margin-top: 70px;
-  margin-bottom: 30px; }
-
 .box-secondary {
   height: 80px;
   margin-bottom: 15px;
@@ -459,6 +453,16 @@ p {
     align-items: flex-end; }
   .box-secondary .secondary-counter {
     font-size: 2.000em; }
+
+.variation-label {
+  font-size: 0.875em;
+  display: inline-flex;
+  align-items: center; }
+
+.overview-header {
+  color: #63687e;
+  margin-top: 70px;
+  margin-bottom: 30px; }
 
 .box-facebook {
   height: 4px;
@@ -512,11 +516,15 @@ p {
 .header {
   padding-top: 30px;
   padding-bottom: 30px; }
-
-.header-line {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.header-subtitle {
-  margin-top: 5px;
-  margin-bottom: 5px; }
+  .header .header-line {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .header .header-subtitle {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  @media only screen and (min-width: 62em) {
+    .header {
+      display: flex;
+      align-items: center; }
+      .header .header-line {
+        visibility: hidden; } }
