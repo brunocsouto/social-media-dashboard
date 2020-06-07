@@ -1,4 +1,4 @@
-![banner](./images/banner.png)
+![banner](./images/banner.jpg)
 
 # Social Media Dashboard
 
